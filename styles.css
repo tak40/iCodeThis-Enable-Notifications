@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: dotted 1px red; */
+}
+
+html {
+    background-color: aliceblue;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1em;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #FFF;
+    width: 90%;
+    padding: 1em;
+    max-width: 30em;
+    gap: 1em;
+}
+
+.notification__close--top,
+.notification__close--bottom {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    cursor: pointer;
+    background-color: #FFF;
+    border: none;
+    font-size: 1rem;
+    padding: 0.15em;
+}
+
+.notification__image img,
+.notification__image--bottom img {
+    width: 100%;
+    display: block;
+}
+
+.notification__image img {
+    width: 7.5em;
+}
+
+.notification__content {
+    align-items: center;
+    width: 65%;
+}
+
+.notification__content h2 {
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.notification__actions,
+.notification__actions--bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 1em;
+}
+
+.notification__actions--bottom {
+    justify-content: center;
+}
+
+.notification__content--bottom {
+    margin-bottom: 20px;
+}
+
+.notification__content--bottom h2 {
+    font-size: 1.35rem;
+    text-align: center;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.notification__button,
+.notification__button--bottom {
+    background: #4c76ec;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.notification__button--bottom {
+    font-size: 1.05rem;
+}
+
+.notification__link,
+.notification__link--bottom {
+    color: #4c76ec;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.notification--bottom {
+    flex-direction: column;
+}
+
+.notification__image--bottom img {
+    width: 12.5em;
+    margin: 0 auto;
+}
+
+.notification__button--bottom {
+    background: #fdba12;
+}
